@@ -31,7 +31,6 @@ if __name__ == "__main__":
     main()
 
 #TODO: #sound_output Research winsound (Windows) or pygame to add Morse audio
-#TODO: #readme_skills Learn how to write a clear README.md for your GitHub repo
 
 #TODO: #documentation Add docstrings and inline comments for each function
 #TODO: #logging Add a feature to log sent alerts to a file like alerts.log

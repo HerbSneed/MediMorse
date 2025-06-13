@@ -19,13 +19,35 @@ MORSE_CODE_DICT = {
 }
 
 def morse_conversion(string):
+    """
+    Converts a given string into Morse code.
+
+    Parameters:
+        string (str): The alert message to convert.
+
+    Returns:
+        str: The Morse code translation of the input string,
+             with individual Morse letters separated by spaces.
+    """
     message = []
     for let in string:
         if let in MORSE_CODE_DICT:
             message.append(MORSE_CODE_DICT[let])
+        else:
+            continue
     return ' '.join(message)
 
 def reverse_translation(code):
+    """
+    Converts Morse code into English.
+
+    Parameters:
+        code (str): Morse code string, with letters separated by spaces
+                    and words separated by '/'.
+
+    Returns:
+        none
+    """
     reverse_morse_code_dict = {value: key for key, value in MORSE_CODE_DICT.items()}
     words = code.split("/")
     decoded_text = ""
@@ -35,6 +57,8 @@ def reverse_translation(code):
         for letter in letters:
             if letter in reverse_morse_code_dict:
                 decoded_text += reverse_morse_code_dict[letter]
+            else:
+                continue
         # Add space between words
         decoded_text += " "
     print(f"Decoded Message: {decoded_text.strip()}")

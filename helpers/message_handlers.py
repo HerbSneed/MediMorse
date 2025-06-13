@@ -19,6 +19,10 @@ PREDEFINED_ALERTS = {
 }
 
 def custom_message():
+    """
+    Prompts the user to enter a custom alert message and room number.
+    Translates the combined message to Morse code and displays the result.
+    """
     message = input("Enter Custom Message: ")
     while True:
         try:
@@ -33,9 +37,12 @@ def custom_message():
     coded_message = morse_conversion(combined_message.upper())
     print(f"Coded Message: {coded_message}")
     input("Press Enter to return to the main menu...")
-    return
 
 def user_alerts():
+    """
+    Prompts the user to chose an alert message and room number.
+    Translates the combined message to Morse code and displays the result.
+    """
     while True:
         try:
             user_alert = int(input('Choose an alert. Type 1-15:'))
@@ -58,4 +65,3 @@ def user_alerts():
     coded_message = morse_conversion(combined_message.upper())
     print(f"Coded Message: {coded_message}")
     input("Press Enter to return to the main menu...")
-    return
