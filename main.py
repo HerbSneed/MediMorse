@@ -1,28 +1,6 @@
 from helpers.art import art
 from helpers.morse_utils import reverse_translation
 from helpers.message_handlers import  custom_message, user_alerts, PREDEFINED_ALERTS
-# from pydub import generators, AudioSegment
-
-
-# Write a function to convert . and - into tones (using pydub.generators.Sine).
-# Use pydub.silence for spacing.
-# Combine the tones into a single audio segment.
-
-# Dot (.): 1 unit long (e.g. 100 ms)
-# dot = generators.Sine[:100]
-# Dash (-): 3 units long (e.g. 300 ms)
-# dash = generators.Sine[:300]
-
-# Silence between parts of same letter: 1 unit
-# let_silence = AudioSegment.silent(duration=100)
-# Silence between letters: 3 units
-# between_let_silence = AudioSegment.silent(duration=300)
-# Silence between words: 7 units
-# word_silence = AudioSegment.silent(duration=700)
-
-
-
-# Play the audio using simpleaudio.
 
 def main():
     while True:
