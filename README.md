@@ -1,4 +1,4 @@
-# 🩺 MorseAid
+# 🩺 Medi Morse
 
 A lightweight CLI tool that helps nurses and caregivers generate or translate patient alerts into **Morse code**.
 
@@ -36,6 +36,14 @@ A lightweight CLI tool that helps nurses and caregivers generate or translate pa
 7. Type `Q` or `QUIT` to exit the app at any time
 
 8. ✅ Done!
+
+## Demo
+
+🎬 Watch MediMorse in action!
+
+[![MediMorse Demo](https://img.youtube.com/vi/-32XLTra-YM/0.jpg)](https://youtu.be/-32XLTra-YM)
+
+
 
 ## 🧠 Use Cases
 

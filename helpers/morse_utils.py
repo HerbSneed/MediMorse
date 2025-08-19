@@ -42,8 +42,7 @@ def reverse_translation(code):
     Converts Morse code into English.
 
     Parameters:
-        code (str): Morse code string, with letters separated by spaces
-                    and words separated by '/'.
+        code (str): Morse code string, with letters separated by spaces and words separated by '/'.
 
     Returns:
         none

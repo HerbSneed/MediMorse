@@ -1,6 +1,7 @@
 from helpers.art import art
 from helpers.morse_utils import reverse_translation
 from helpers.message_handlers import  custom_message, user_alerts, PREDEFINED_ALERTS
+import sys
 
 def main():
     while True:
@@ -14,7 +15,7 @@ def main():
                     send_receive = input("\nWould you like to generate or translate a message? Type G or T: ").upper()
                     if send_receive =="Q" or send_receive == "QUIT":
                         print("Goodbye")
-                        break
+                        sys.exit()
                     elif send_receive == "G":
                         user_custom_message = input('Would you like to send a custom message? Type Yes or No: ').lower()
                         if user_custom_message == 'no' or user_custom_message == 'n':
@@ -22,7 +23,7 @@ def main():
                         elif user_custom_message == 'yes' or user_custom_message =='y':
                             custom_message()
                     elif send_receive == "T":
-                        code = input("Type or paste morse code to be translated in English.")
+                        code = input("Type or paste morse code to be translated in English: ")
                         reverse_translation(code)
                     else:
                         break

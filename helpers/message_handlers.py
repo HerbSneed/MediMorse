@@ -1,4 +1,4 @@
-from morse_utils import  morse_conversion
+from helpers.morse_utils import morse_conversion
 
 PREDEFINED_ALERTS = {
     1: "Code Blue",
@@ -30,13 +30,13 @@ def custom_message():
             if 100 <= room_number <= 150:
                 break
             else:
-                print("Enter a valid number between 100-150.")
+                print("Enter a valid number between 100-150: ")
         except ValueError:
             print("Please enter a number.")
     combined_message = f"{message} {room_number}"
     coded_message = morse_conversion(combined_message.upper())
     print(f"Coded Message: {coded_message}")
-    input("Press Enter to return to the main menu...")
+    input("Copy message then press Enter to return to the main menu...")
 
 def user_alerts():
     """
@@ -45,23 +45,23 @@ def user_alerts():
     """
     while True:
         try:
-            user_alert = int(input('Choose an alert. Type 1-15:'))
+            user_alert = int(input('Choose an alert. Type 1-15: '))
             if 1 <= user_alert <= 15:
                 break
             else:
-                print("Enter a valid number between 1-15.")
+                print("Enter a valid number between 1-15. ")
         except ValueError:
-            print("Please enter a number.")
+            print("Please enter a number. ")
     while True:
         try:
             room_number = int(input('Input room number. Type 100-150: '))
             if 100 <= room_number <= 150:
                 break
             else:
-                print("Enter a valid number between 100-150.")
+                print("Enter a valid number between 100-150. ")
         except ValueError:
-            print("Please enter a number.")
+            print("Please enter a number. ")
     combined_message = f"{PREDEFINED_ALERTS[user_alert]} {room_number}"
     coded_message = morse_conversion(combined_message.upper())
     print(f"Coded Message: {coded_message}")
-    input("Press Enter to return to the main menu...")
+    input("Copy message then press Enter to return to the main menu...")
