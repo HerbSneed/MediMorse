@@ -40,7 +40,7 @@ def custom_message():
 
 def user_alerts():
     """
-    Prompts the user to chose an alert message and room number.
+    Prompts the user to choose an alert message and room number.
     Translates the combined message to Morse code and displays the result.
     """
     while True:
